@@ -1,0 +1,47 @@
+{
+  "name": "smspva-client",
+  "version": "1.0.0",
+  "description": "API client for smspva.com",
+  "main": "index.js",
+  "scripts": {
+    "docs": "jsdoc2md lib/*.js index.js > api.md",
+    "test": "jest"
+  },
+  "author": "Nico Kokonas (nico@nicomee.com)",
+  "license": "MIT",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "got": "^9.4.0"
+  },
+  "keywords": [
+    "bots",
+    "automation",
+    "confirmation",
+    "activation",
+    "authentication",
+    "auth",
+    "code",
+    "pin",
+    "otp",
+    "login",
+    "security",
+    "number",
+    "phone",
+    "phone number",
+    "sms",
+    "smspva.com",
+    "smspva",
+    "2fac",
+    "2factor",
+    "2-fac",
+    "2-factor",
+    "2-step",
+    "2-FA"
+  ],
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "jsdoc": "^3.6.3",
+    "jsdoc-to-markdown": "^5.0.3",
+    "update-markdown-jsdoc": "^1.0.11"
+  }
+}

@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "10"
+dist: trusty
+env:
+  - NODE_ENV=ci
+cache:
+  directories:
+    - node_modules
+install:
+  - npm install
+script:
+  - sleep 5
+  - npm run test
