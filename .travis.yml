@@ -4,6 +4,7 @@ node_js:
 dist: trusty
 env:
   - NODE_ENV=ci
+  - SMSPVA_KEY=Agy7UgoqMOW3dS1H3QO9NOC5utciHCe9ID5sJjIl
 cache:
   directories:
     - node_modules

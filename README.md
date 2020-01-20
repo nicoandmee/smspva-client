@@ -7,8 +7,8 @@
 
 Refer to the [Services List](http://smspva-client.com/new_theme_api.html) for all supported providers. Note that in 2020 they will be releasing a new version, check it out here: [SMSPVA Beta](http://beta.smspva-client.com/).
 I have to make use of their API often enough I plan on maintaining this package once their new API spec is finalized. After finishing this package I realized they already have an official package you may well want to use prepared: [smspva-beta-node]
-* These numbers are perfect for bypassing phone verification
-challenges during your bot operations among other things!
+
+* These numbers are perfect for bypassing phone verification challenges during your bot operations among other things!
 
 [![NPM](https://img.shields.io/npm/v/smspva-client.svg)](https://www.npmjs.com/package/smspva-client) [![Build Status](https://travis-ci.com/transitive-bullshit/smspva-client.svg?branch=master)](https://travis-ci.com/transitive-bullshit/sms-number-verifier) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -31,7 +31,7 @@ const smspva = new smspva({
 });
 
 // get a number to be used for bypassing the prompt
-const number = await smspva-clientClient.getNumber({country: 'US', service: 'venmo'});
+const number = await smspva.getNumber({country: 'US', service: 'venmo'});
 
 // provide this number to the site presenting you with the challenge, have your bot type it in and submit, etc.
 await bot.fillFormAndSubmit(number.number);
@@ -49,6 +49,7 @@ await smspva.ban({ id: number.id, service: 'google' });
 await smspva.ban({ id: number.id, service: 'google' });
 
 ```
+
 ## References
 
-Please see API documentation for full usage details (api.md).
+Please see API documentation for full usage details: [API](https://github.com/nicoandmee/smspva-client/blob/master/api.md).

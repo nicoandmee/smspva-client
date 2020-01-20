@@ -3,13 +3,13 @@ let client;
 
 beforeEach(() => {
     client = new SMSPVAClient({
-        key: 'Agy7UgoqMOW3dS1H3QO9NOC5utciHCe9ID5sJjIl',
+        key: process.env.SMSPVA_KEY,
     });
 });
 
 
 test('Can get a Venmo number', async () => {
-    const tempPhone = await client.getNumber('US', 'venmo');
-    
+    const tempPhone = await client.getNumber({country: 'US', service: 'venmo'});
+
     expect(tempPhone).toBeDefined();
 });
