@@ -40,12 +40,10 @@ class SMSPVAClient {
 
     /**
      * @description Returns User's balance
-     * @param {string} service Particular service to check balance for
      * @returns {number} User's balance
      */
-    async getBalance(service) {
-        const provider = projects.serviceToPID(service);
-        const { body } = await this._client(`http://smspva.com/priemnik.php?metod=getBalance&service=${provider}&apikey=${this._key}`);
+    async getBalance() {
+        const { body } = await this._client(`http://smspva.com/priemnik.php?metod=getBalance&service=opt4&apikey=${this._key}`);
         const currentBalance = Number(body.balance);
         return currentBalance;
     }

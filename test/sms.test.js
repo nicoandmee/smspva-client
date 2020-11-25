@@ -7,6 +7,11 @@ beforeEach(() => {
     });
 });
 
+test('Can check balance', async () => {
+    const bal = await client.getBalance();
+
+    expect(bal).toBeNumber();
+});
 
 test('Can get a Venmo number', async () => {
     const tempPhone = await client.getNumber({country: 'US', service: 'venmo'});
