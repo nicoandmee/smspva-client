@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "assert": "^2.0.0",
-    "got": "^9.4.0"
+    "got": "^11.8.5"
   },
   "keywords": [
     "bots",
